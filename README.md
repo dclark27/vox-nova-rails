@@ -13,7 +13,7 @@ Vox Nova uses a number of open source projects to work properly:
 * [Ruby](https://www.ruby-lang.org/en/) - a dynamic, reflective, object-oriented, general-purpose programming language
 * [Rails](http://rubyonrails.org) - model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages.
 * [Bootstrap](http://getbootstrap.com) - a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development
-* [jQuery] - duh
+* [jQuery](https://jquery.com) - duh
 
 ### Installation
 
@@ -44,5 +44,5 @@ Vox Nova uses a number of open source projects to work properly:
 ## Credits
 * [Devin Clark](https://github.com/dclark27)
 
-#### About Vox Nova
+## About Vox Nova
 Vox Nova is a vocal chamber group of music educators and performers who want to share inspiring choral music with the community.
