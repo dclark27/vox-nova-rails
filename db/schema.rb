@@ -11,11 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207170751) do
+ActiveRecord::Schema.define(version: 20160228183132) do
 
   create_table "concerts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "name"
+    t.text     "description"
+    t.date     "date"
   end
 
   create_table "contacts", force: :cascade do |t|
@@ -24,13 +27,19 @@ ActiveRecord::Schema.define(version: 20160207170751) do
   end
 
   create_table "media", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "title"
+    t.text     "image_url"
+    t.text     "description"
   end
 
   create_table "members", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "member_name"
+    t.text     "member_bio"
+    t.text     "member_image_url"
   end
 
   create_table "news", force: :cascade do |t|
