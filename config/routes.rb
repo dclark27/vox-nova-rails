@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :galleries
   get 'welcome/index'
 
   resources :contacts
-  resources :media
   resources :members
   resources :concerts
   resources :news
