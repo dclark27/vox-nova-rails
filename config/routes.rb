@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   resources :galleries
   get 'welcome/index'
 
-  resources :contacts
   resources :members
+  resources :contacts
   resources :concerts
   resources :news
   # The priority is based upon order of creation: first created -> highest priority.
