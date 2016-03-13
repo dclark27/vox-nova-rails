@@ -14,6 +14,8 @@ Vox Nova uses a number of open source projects to work properly:
 * [Rails](http://rubyonrails.org) - model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages.
 * [Bootstrap](http://getbootstrap.com) - a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development
 * [jQuery](https://jquery.com) - duh
+* [RailsAdmin](https://github.com/sferik/rails_admin) - RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data.
+* [Devise] (https://github.com/plataformatec/devise) - Devise is a flexible authentication solution for Rails based on Warden
 
 ### Installation
 
