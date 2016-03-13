@@ -1,4 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				<strong>Name:</strong>
+				<%= @concert.name %>
+			</p>
 
-<%= link_to 'Edit', edit_concert_path(@concert) %> |
-<%= link_to 'Back', concerts_path %>
+			<p>
+				<strong>Description:</strong>
+				<%= @concert.description %>
+			</p>
+			<p>
+				<strong>Location:</strong>
+				<%= @concert.location %>
+			</p>
+			<p>
+				<strong>Date / Time:</strong>
+				<%= @concert.datetime %>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<%= link_to 'Back', concerts_path %>
+		</div>
+	</div>
+</div>
