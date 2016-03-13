@@ -3,15 +3,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   resources :members, :only => [:index, :show]
-  
-  namespace :admin do |admin|
-    resources :members
-  end
-
-  resources :contacts
-  resources :concerts
-  resources :news
-  resources :galleries
+  resources :concerts, :only => [:index, :show]
+  resources :contacts, :only => [:index]
+  resources :news, :only => [:index, :show]
 
   root 'welcome#index'
 
