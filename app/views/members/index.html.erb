@@ -1,21 +1,25 @@
-<div class="container">
+<div class="container title">
   <div class="row">
-    <div class="col-md-12">
-      <table class="table">
-        <tr>
-          <th>Name</th>
-          <th>Bio</th>
-          <th colspan="2"></th>
-        </tr>
-
-        <% @member.each do |member| %>
-        <tr>
-          <td><%= member.name %></td>
-          <td><%= member.bio %></td>
-          <td><%= image_tag member.image.url(:med) %></td>
-        <% end %>
-      </table>
-
-    </div>
+    <h1 class="page-header text-center">
+      Members <br>
+      <small>Current roster of Vox Nova</small>
+    </h1>
   </div>
+</div>
+<div class="container">
+  <% @member.in_groups_of(3, false).each do |group| %>
+  <div class="row row-flex row-flex-wrap">
+    <% group.each do |item| %>
+    <div class="col-sm-6 col-md-4 bioBox">
+      <div class="thumbnail">
+        <%= image_tag item.image.url(:large) %>
+        <div class="caption">
+          <h3 class="page-header"><%= item.name %></h3>
+          <p><%= item.bio %></p>
+        </div>
+      </div>
+    </div>  
+    <% end %>
+  </div>
+  <% end %>
 </div>
