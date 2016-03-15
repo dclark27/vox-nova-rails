@@ -12,6 +12,7 @@
         <tr>
           <td><%= member.name %></td>
           <td><%= member.bio %></td>
+          <td><%= image_tag member.image.url(:med) %></td>
         <% end %>
       </table>
 

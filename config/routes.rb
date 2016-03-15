@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :galleries
   mount RailsAdmin::Engine => '/voxadmin', as: 'rails_admin'
   get 'welcome/index'
 
