@@ -1,6 +1,5 @@
 class CreateConcerts < ActiveRecord::Migration
   def change
-  	drop_table :concerts
     create_table :concerts do |t|
       t.string :name
       t.text :description

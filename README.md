@@ -15,28 +15,35 @@ Vox Nova uses a number of open source projects to work properly:
 * [Bootstrap](http://getbootstrap.com) - a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development
 * [jQuery](https://jquery.com) - duh
 * [RailsAdmin](https://github.com/sferik/rails_admin) - a Rails engine that provides an easy-to-use interface for managing your data
-* [Devise] (https://github.com/plataformatec/devise) - a flexible authentication solution for Rails based on Warden
+* [Devise](https://github.com/plataformatec/devise) - a flexible authentication solution for Rails based on Warden
+* [Paperclip](https://github.com/thoughtbot/paperclip) - an easy file attachment library for ActiveRecord
+* [ImageMagick](http://www.imagemagick.org/script/index.php) - software suite to create, edit, compose, or convert bitmap images
 
 ### Installation
 
-1. Install Rails at the command prompt if you haven't yet:
+1. Install ImageMagick
+
+2. Install Rails at the command prompt if you haven't yet:
 
         $ gem install rails
 
-2. Clone this repository:
+3. Clone this repository:
 
         $ git clone https://github.com/dclark27/vox-nova-rails.git
 
-3. Change directory to `vox-nova-rails` and start the web server:
+4. Change directory to `vox-nova-rails` and start the web server:
 
         $ cd vox-nova-rails
+        $ bundle install
+        $ rake db:create
+        $ rake db:migrate
         $ rails server
 
    Run with `--help` or `-h` for options.
 
-4. Using a browser, go to `http://localhost:3000` and you'll see the home page
+5. Using a browser, go to `http://localhost:3000` and you'll see the home page
 
-5. Follow the guidelines to start developing your application. You may find
+6. Follow the guidelines to start developing your application. You may find
    the following resources handy:
     * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
     * [Ruby on Rails Guides](http://guides.rubyonrails.org)
