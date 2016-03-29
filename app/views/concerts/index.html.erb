@@ -1,24 +1,40 @@
-<div class="container">
+<div class="container title">
   <div class="row">
-    <div class="col-md-12">
-      <table class="table">
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Location</th>
-          <th>Date / Time</th>
-          <th colspan="2"></th>
-        </tr>
-
-        <% @concert.each do |concert| %>
-        <tr>
-          <td><%= concert.name %></td>
-          <td><%= concert.description %></td>
-          <td><%= concert.location %></td>
-          <td><%= concert.datetime %></td>
-        <% end %>
-      </table>
-
-    </div>
+    <h1 class="page-header text-center">
+      Concerts <br>
+      <small>Upcoming performences</small>
+    </h1>
   </div>
 </div>
+<div class="container">
+  <!-- Features Section -->
+  <% @concert.each do |concert| %>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="page-header"><%= concert.name %></h2>
+    </div>
+    <div class="col-md-6">
+      <p><strong>Description: </strong>
+        <br>
+        <%= concert.description %></p>
+        <table class="table">
+          <tr>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th colspan="2"></th>
+          </tr>
+          <tr>
+            <td><%= concert.location %></td>
+            <td><%= concert.datetime.strftime("%B %d, %Y") %></td>
+            <td><%= concert.datetime.strftime("%l %p") %></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+          <img class="img-responsive" src=<%= concert.image.url(:large) %> alt="">
+      </div>
+    </div>
+    <% end %>
+    <!-- /.row -->
+  </div>
