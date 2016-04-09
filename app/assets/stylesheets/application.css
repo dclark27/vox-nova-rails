@@ -22,6 +22,11 @@
  */
 
 /* Global Styles */
+@font-face {
+    font-family: 'Modern No 20';
+    font-style: normal;
+    src: url('modern-no-20.ttf');
+}
 
 html,
 body {
@@ -32,7 +37,25 @@ body {
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
+.top-buffer { 
+    margin-top:100px; 
+}
 
+.brand-font {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 30px !important;
+    line-height: 60px;
+    margin: 0 16px;
+    padding: 0;
+    color: #fefefe;
+    float: none;
+    max-width: none;
+    font-weight: 300;
+    display: initial;
+    font-family: "Modern No 20", Verdana, Tahoma;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -109,3 +132,4 @@ footer {
         height: 70%;
     }
 }
+
