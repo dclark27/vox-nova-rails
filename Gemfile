@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Paperclip is intended as an easy file attachment library for ActiveRecord
 gem "paperclip", "~> 4.3"
 
+gem 'aws-sdk'
+
 gem 'rails_admin'
 
 gem 'rails_12factor', group: :production
