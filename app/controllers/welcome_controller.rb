@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-  	@image1 = Gallery.find(1)
-  	@image2 = Gallery.find(2)
-  	@image3 = Gallery.find(3)
+  	@image1 = Gallery.find(4)
+  	@image2 = Gallery.find(5)
+  	@image3 = Gallery.find(6)
   end
 end

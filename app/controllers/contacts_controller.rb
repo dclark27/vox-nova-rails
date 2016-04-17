@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
 	def index
-	  	@image = Gallery.find(10)
+	  	@image = Gallery.find(7)
 	end	
 end
