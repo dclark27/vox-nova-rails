@@ -1,20 +1,43 @@
+<div class="container title">
+  <div class="row">
+    <h1 class="page-header text-center">
+      <%= @news.title %> <br>
+      <small><%= @news.created_at.strftime("%b %d, %Y") %></small>
+    </h1>
+  </div>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<p>
-				<strong>Title:</strong>
-				<%= @news.title %>
-			</p>
-
-			<p>
-				<strong>Post:</strong>
-				<%= @news.body %>
-			</p>
+			<p><%= @news.body %>
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-sm-12"><h2>Gallery:</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12"><img class="img-responsive center-block" src=<%= @news.image1.url(:large) %> alt=""></div>
+	</div>
+	<div class="row">
+		<% unless @news.image2.blank? %>
+			<div class="col-sm-6"><img class="img-responsive center-block" src=<%= @news.image2.url(:large) %> alt=""></div>
+
+		<% end %>
+		<% unless @news.image3.blank? %>
+			<div class="col-sm-6"><img class="img-responsive center-block" src=<%= @news.image3.url(:large) %> alt=""></div>
+		<% end %>
+	</div>
+	<div class="row">
+		<% unless @news.image4.blank? %>
+			<div class="col-sm-6"><img class="img-responsive center-block" src=<%= @news.image4.url(:large) %> alt=""></div>
+		<% end %>
+		<% unless @news.image5.blank? %>
+			<div class="col-sm-6"><img class="img-responsive center-block" src=<%= @news.image5.url(:large) %> alt=""></div>
+		<% end %>
+	</div>
+	<div class="row top-buffer">
 		<div class="col-md-12">
-			<%= link_to 'Back', news_path %>
+			<a href="/news">< Back to news</a>
 		</div>
 	</div>
 </div>
