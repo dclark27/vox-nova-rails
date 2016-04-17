@@ -25,11 +25,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Paperclip is intended as an easy file attachment library for ActiveRecord
 gem "paperclip", "~> 4.3"
 
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 gem 'rails_admin'
 
 gem 'rails_12factor', group: :production
+
+gem 'puma'
+gem 'puma-heroku'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
