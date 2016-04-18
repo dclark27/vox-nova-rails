@@ -18,37 +18,44 @@ Vox Nova uses a number of open source projects to work properly:
 * [Devise](https://github.com/plataformatec/devise) - a flexible authentication solution for Rails based on Warden
 * [Paperclip](https://github.com/thoughtbot/paperclip) - an easy file attachment library for ActiveRecord
 * [ImageMagick](http://www.imagemagick.org/script/index.php) - software suite to create, edit, compose, or convert bitmap images
+* [Puma](https://github.com/puma/puma) - Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.
+* [Postgres Sql](http://postgresapp.com/) - Postgres.app is the easiest way to get started with PostgreSQL on the Mac. Open the app, and you have a PostgreSQL server ready and awaiting new connections. Close the app, and the server shuts down.
+* [Heroku](https://heroku.com/) - Heroku is a platform as a service (PaaS) that enables developers to build and run applications entirely in the cloud.
+* [Amazon Web Services](aws.amazon.com) - Broad & Deep Core Cloud Infrastructure Services used for remote file hosting.
 
 ### Installation
 
-1. Install ImageMagick
+1. Install ImageMagick, Heroku Toolbelt, Postgres, and Rails
 
-2. Install Rails at the command prompt if you haven't yet:
-
-        $ gem install rails
+2. Create an account with Amazon Web Services and get the secret ID and key
 
 3. Clone this repository:
 
         $ git clone https://github.com/dclark27/vox-nova-rails.git
 
-4. Change directory to `vox-nova-rails` and start the web server:
+4. Add a file, '.env', to the root of the project based on 'example.env' and replace the xxxxx's with your ID
+
+5. Navigate  to `vox-nova-rails` and start the web server:
 
         $ cd vox-nova-rails
         $ bundle install
         $ rake db:create
         $ rake db:migrate
-        $ rails server
+        $ heroku locale // to run locally or 
+        $ git push heroku master && heroku open // to run online
 
    Run with `--help` or `-h` for options.
 
-5. Using a browser, go to `http://localhost:3000` and you'll see the home page
+6. Using a browser, go to `http://localhost:5000` and you'll see the home page
 
-6. Follow the guidelines to start developing your application. You may find
+7. Follow the guidelines to start developing your application. You may find
    the following resources handy:
     * [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
     * [Ruby on Rails Guides](http://guides.rubyonrails.org)
     * [The API Documentation](http://api.rubyonrails.org)
     * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
+    * [Uploading Files to S3 in Ruby with Paperclip](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=heroku+paperclip)
+    * [Deploying to Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4#deploy-your-application-to-heroku)
 
 ## Credits
 * [Devin Clark](https://github.com/dclark27)
