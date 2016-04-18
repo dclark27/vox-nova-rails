@@ -41,6 +41,7 @@ Vox Nova uses a number of open source projects to work properly:
         $ bundle install
         $ rake db:create
         $ rake db:migrate
+        $ RAILS_ENV=default bundle exec rake assets:precompile // If going public
         $ heroku locale // to run locally or 
         $ git push heroku master && heroku open // to run online
 
