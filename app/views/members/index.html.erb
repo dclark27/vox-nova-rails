@@ -6,6 +6,15 @@
     </h1>
   </div>
 </div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group">
+      <% @member.each do |member| %>
+      <a href="#<%= item.id %>" class="list-group-item"><%= member.item %></a>
+      <% end %>
+    </div>
+  </div>
+</div>
 <div class="container">
   <% @member.in_groups_of(3, false).each do |group| %>
   <div class="row row-flex row-flex-wrap">
