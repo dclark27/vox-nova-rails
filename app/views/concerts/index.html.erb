@@ -16,7 +16,7 @@
     <div class="col-md-6">
       <p><strong>Description: </strong>
         <br>
-        <%= concert.description %></p>
+        <%= concert.description.html_safe %></p>
         <table class="table">
           <tr>
             <th>Location</th>
@@ -32,7 +32,7 @@
         </table>
       </div>
       <div class="col-md-6">
-          <img class="img-responsive" src=<%= concert.image.url(:large) %> alt="">
+          <img class="img-responsive center-block" src=<%= concert.image.url(:large) %> alt="">
       </div>
     </div>
     <% end %>

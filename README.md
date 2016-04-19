@@ -41,6 +41,7 @@ Vox Nova uses a number of open source projects to work properly:
         $ bundle install
         $ rake db:create
         $ rake db:migrate
+        $ RAILS_ENV=default bundle exec rake assets:precompile // If going public
         $ heroku locale // to run locally or 
         $ git push heroku master && heroku open // to run online
 
@@ -56,6 +57,7 @@ Vox Nova uses a number of open source projects to work properly:
     * [Ruby on Rails Tutorial](http://www.railstutorial.org/book)
     * [Uploading Files to S3 in Ruby with Paperclip](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=heroku+paperclip)
     * [Deploying to Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails4#deploy-your-application-to-heroku)
+    * [Asset Pre Compiling in Heroku](https://devcenter.heroku.com/articles/rails-asset-pipeline)
 
 ## Credits
 * [Devin Clark](https://github.com/dclark27)
