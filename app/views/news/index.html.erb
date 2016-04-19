@@ -20,7 +20,7 @@
     <div class="col-sm-8">
       <p><strong><%= news.created_at.strftime("%b %d, %Y") %></strong>
         <br>
-        <%= truncate(news.body, length: 300) %></p>
+        <%= truncate(news.body.html_safe, length: 300) %></p>
         <br>
       </div>
        <div class="col-sm-4">
