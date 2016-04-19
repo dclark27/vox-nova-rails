@@ -30,7 +30,7 @@ gem 'aws-sdk', '< 2.0'
 gem 'rails_admin'
 
 gem 'rails_12factor', group: :production
-
+gem 'paperclip-compression'
 gem 'puma'
 gem 'puma-heroku'
 
