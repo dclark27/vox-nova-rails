@@ -25,6 +25,8 @@ Vox Nova uses a number of open source projects to work properly:
 
 ### Installation
 
+0. Ensure you have access to ruby 2.3.0 -- We highly suggest using a ruby environment manager like rbenv.
+
 1. Install ImageMagick, Heroku Toolbelt, Postgres, and Rails
 
 2. Create an account with Amazon Web Services and get the secret ID and key
